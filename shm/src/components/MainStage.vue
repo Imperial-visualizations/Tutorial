@@ -7,24 +7,38 @@
 <script>
 export default {
     props:{
-        mag: {
+        freq: {
             default: 0.005,
+        },
+        amp: {
+            default: 50,
         }
     },
     mounted(){
         let vm = this;
         let canvas = document.querySelector('canvas');
         let parent = document.getElementById('parent');
-        let x = 50 + canvas.width/2;
-        let dx = 0;
-
         canvas.width = parent.offsetWidth;
         canvas.height = parent.offsetHeight;
-        
         let c = canvas.getContext('2d');
+
+        let amp = vm.amp;
+        let freq = vm.freq;
+        let x = amp + canvas.width/2;
+        let dx = 0;
 
         function animate(){
             requestAnimationFrame(animate);
+
+            //Check for prop changes
+            if(amp !== vm.amp || freq !== vm.freq){
+                amp = vm.amp;
+                freq = vm.freq;
+                console.log('value change');
+                x = amp + canvas.width/2;
+                dx = 0;
+            }
+        
 
             c.clearRect(0,0,canvas.width, canvas.height);
 
@@ -50,10 +64,11 @@ export default {
             c.fill();
 
             x += dx;
-            dx += - vm.mag * (x-canvas.width/2);
+            dx += - freq * (x-canvas.width/2);
         }
 
         animate();
+        
         
 
     }
