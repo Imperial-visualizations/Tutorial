@@ -17,25 +17,25 @@
 
             </template>
 
-            <Separate-component></Separate-component>
-            
+            <MainStage></MainStage>
 
         </iv-visualisation>
     </div>
 </template>
 <script>
 import {name} from '../package.json';
+import MainStage from './components/MainStage.vue';
+
 export default {
     name:"App",
+    components:{
+        MainStage,
+    },
     data(){
         return {
             projectName: name
         }
     },
-    mounted(){
-        let canvas = document.querySelector('canvas');
-        let c = canvas.getContext('2d');
-    }
 }
 </script>
 <style>
