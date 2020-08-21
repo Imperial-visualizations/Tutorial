@@ -1,14 +1,26 @@
 <template>
     <div>
-        <iv-title-bar> </iv-title-bar>
-        <iv-visalisation>
-            <div class="iv-welcome-message">
-                <img src='./assets/ImpVis-logo.png' alt="ImpVisLogo" height="50"/>
-                <h1> Welcome to Imperial Visualisations!</h1>
-                <p> Your project, {{projectName}} has succesfully been set up using a script tag import!</p>
-                <p> There is a vue instance up and running!</p>
-            </div>
-        </iv-visalisation>
+        <iv-title-bar>This is my title</iv-title-bar>
+        <iv-visualisation>
+            <template #hotspots>
+                <iv-pane position="left">
+                    Hi! This is a pane
+                </iv-pane>
+                <iv-toggle-hotspot position="bottom" title="Button Title"> 
+                    This will go inside the pop-out section
+                </iv-toggle-hotspot>
+                
+                <iv-fixed-hotspot position="topright" title="Fixed">
+                    This will go inside the fixed hotspot, so will always appear on the screen.
+                    P.S. You must specify a title and position.
+                </iv-fixed-hotspot>
+
+            </template>
+
+            <Separate-component></Separate-component>
+            
+
+        </iv-visualisation>
     </div>
 </template>
 <script>
@@ -19,6 +31,10 @@ export default {
         return {
             projectName: name
         }
+    },
+    mounted(){
+        let canvas = document.querySelector('canvas');
+        let c = canvas.getContext('2d');
     }
 }
 </script>
@@ -30,3 +46,6 @@ export default {
     margin-top: 50px;
 }
 </style>
+
+
+
