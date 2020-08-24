@@ -8,7 +8,7 @@
                 </iv-pane>
 
                 <iv-toggle-hotspot position="bottom" title="Button Title"> 
-                    <iv-slider @sliderChanged="slider1Change" :colorBlock="green" :max="0.02" :min="0.0005" :init_val="0.01" :sliderName="'slider test'" :unit="'test unit'" :step="0.0005" />
+                    <iv-slider @sliderChanged="slider1Change" :colorBlock="green" :max="0.02" :min="0.0005" :init_val="0.01" :sliderName="'slider test'" :unit="'test unit'" :step="0.05" />
                     <iv-slider @sliderChanged="slider2Change" :colorBlock="green" :max="200" :min="1" :init_val="50" :sliderName="'slider test'" :unit="'test unit'" :step="1" />
                 </iv-toggle-hotspot>
                 
