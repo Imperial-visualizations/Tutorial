@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import ImpVis from "@impvis/components";
 import "@impvis/components/dist/impvis-components.css";
+import MainStage from './components/MainStage.vue';
 
 Vue.config.productionTip = false
 Vue.use(ImpVis);

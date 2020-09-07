@@ -1,25 +1,107 @@
 <template>
     <div>
-        <iv-title-bar> </iv-title-bar>
-        <iv-visalisation>
-            <div class="iv-welcome-message">
-                <img src='./assets/ImpVis-logo.png' alt="ImpVisLogo" height="50"/>
-                <h1> Welcome to Imperial Visualisations!</h1>
-                <p> Your project, {{projectName}} has succesfully been set up using a script tag import!</p>
-                <p> There is a vue instance up and running!</p>
-            </div>
-        </iv-visalisation>
+        <iv-visualisation>
+            <template #hotspots>
+                <iv-pane position = "left">
+                    <h2>For code and crisps students</h2>                   
+                    Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                </iv-pane>
+                
+            </template>
+            <h1>Text within the mainstage </h1>
+            Imperial Visualisations is a team of staff and students from across College.
+            We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+            We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+            We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    Imperial Visualisations is a team of staff and students from across College.
+                    We create interactive online visualisations on abstract concepts in conjunction with lecture courses.
+                    The core team is composed of four groups of people. These are: 
+                    Staff partners: College staff members with expertise in an academic subject.
+                    
+
+            <MainStage></MainStage>
+        </iv-visualisation>
+        
+        
     </div>
 </template>
 <script>
 import {name} from '../package.json';
+import MainStage from './components/MainStage.vue';
 export default {
     name:"App",
+    components:{
+       MainStage,
+    },
     data(){
         return {
             projectName: name
         }
-    }
+    },
 }
 </script>
 <style>
