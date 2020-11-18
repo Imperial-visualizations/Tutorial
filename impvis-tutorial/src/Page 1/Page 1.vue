@@ -1,6 +1,6 @@
 <template>
     <div>
-        <iv-title-bar>ImpVis tutorial</iv-title-bar>
+        <iv-title-bar>ImpVis tutorial - Welcome</iv-title-bar>
         <iv-visualisation>
             <div class="intro-banner">
             <img src="@/assets/images/ImpVis-logo.png"/>
@@ -15,7 +15,7 @@
 </template>
 <script>
 export default {
-    name:"Page1",
+    name:"Welcome",
 }
 </script>
 <style>
