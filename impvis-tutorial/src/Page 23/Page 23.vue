@@ -19,7 +19,7 @@
             <center>
             <h1>Usage</h1>
             Creating Visualisations with the Vue CLI is a breeze! To create a visualisation, open a new terminal window in the directory
-            you wish to create the visualisation folder. Then run: <code>create-impvis <i>name</i></code>
+            you wish to create the visualisation folder. Then run: <code>impvis create <i>name</i></code>
             </center>
             <p>Where <i>name</i> is the name of your visualisation (decide that here). You will then be guided through step by step prompts 
             to allow you to configure the base visualisation template to suit your needs. At present, the CLI has four template options available 
