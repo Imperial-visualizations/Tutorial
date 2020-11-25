@@ -8,13 +8,13 @@
                 </center>
                 <p>It is often convenient to see changes on your website while editing. For that purpose, we make use of the live server.
                 Click on the extension button, search for Live Server, and install it.</p>
-                <img src="@/assets/images/live_server.png"  style="width:277x;height:auto;"/>
-                Once you have done that, go back to the HTML file you have created and click on the <i>‘Go Live’</i> button on the bottom right.
-                <img src="@/assets/images/Hello_world.png"  style="width:1380x;height:auto;"/>
-                Your HTML file will be opened in your default browser now. You can put the browser and VSCode side by side and see the changes 
-                being done live (after saving your changes). You may utilise the autosave function (in the File dropdown) if you like.<br><center>
-                <img src="@/assets/images/Hello_world_display.png"  style="width:1024x;height:auto;"/></center>
-                To stop the Live Server, click on the ‘Port: 5500’ cancel button (at the bottom right).
+                <img src="@/assets/images/live_server.png"  style="width:80%;height:auto;"/>
+                <p>Once you have done that, go back to the HTML file you have created and click on the <i>‘Go Live’</i> button on the bottom right.</p>
+                <img src="@/assets/images/Hello_world.png"  style="width:80%;height:auto;"/>
+                <p>Your HTML file will be opened in your default browser now. You can put the browser and VSCode side by side and see the changes 
+                being done live (after saving your changes). You may utilise the autosave function (in the File dropdown) if you like.<br></p>
+                <img src="@/assets/images/Hello_world_display.png"  style="width:80%;height:auto;"/>
+                <p>To stop the Live Server, click on the ‘Port: 5500’ cancel button (at the bottom right).</p>
             </div>
             <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
