@@ -30,8 +30,17 @@
                 <li>Basic legacy template from Summer 2019</li>
                 <li>Advanced legacy template from Summer 2019</li>
             </ol>
-            If you're new to ImpVis, we recomment the first option.
+            If you're new to ImpVis, we recommend the first option.
             </div>
+
+            <center>
+            <h1>Running Your Vis</h1>
+            <p>When you want to run your visualisation, navigate to the folder where you created it in command prompt or terminal and run the command, <code>npm run serve</code>. 
+            The project will then build and you should be able to open it by navigating to one of the adresses shown in your browser. Any changes to the code will now be shown in 
+            real time.
+            To end the server press "control + C" in the command prompt.
+            </p>
+            </center>
            
             <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
