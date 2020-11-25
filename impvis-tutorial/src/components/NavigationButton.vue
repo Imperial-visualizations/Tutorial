@@ -3,11 +3,18 @@
         <a
             :href="'./' + 'page_' + (pageNumber - 1) + '.html'"
             class="iv-button nav-button nav-button-text"
+            v-if="shouldRenderPrevious"
             >Previous</a
+        >
+        <a
+            :href="'./index.html'"
+            class="iv-button nav-button nav-button-text"
+            >Contents</a
         >
         <a
             :href="'./' + 'page_' + (pageNumber + 1) + '.html'"
             class="iv-button nav-button nav-button-text"
+            v-if="shouldRenderNext"
             >Next</a
         >
     </div>
@@ -27,6 +34,12 @@ export default {
             console.log("pageName", num);
             return num;
         },
+        shouldRenderPrevious: function() {
+            return this.pageNumber - 1 >= 1
+        },
+        shouldRenderNext: function() {
+            return this.pageNumber + 1 <= 50
+        }
     },
 };
 </script>
@@ -36,14 +49,15 @@ export default {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .nav-button {
     display: block;
     width: 4.8rem;
-    margin-right: 1.5rem;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
     background: #133f6f;
 }
 .nav-button:hover {
