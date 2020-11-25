@@ -57,11 +57,17 @@
                 Absolute sizes are generally defined in pixels, e.g.:<code>width:550px; height: 300px;</code>. The disadvantage of this method of defining sizes is that certain elements will end up being different sizes, depending on the user's screen's resolution. For this reason, when defining div sizes, it is strongly recommended you use relative units.
             </p>
             </div>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page41",
 }
 </script>

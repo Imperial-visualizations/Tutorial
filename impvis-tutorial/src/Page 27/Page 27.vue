@@ -16,11 +16,17 @@
              This code produces what you see onscreen now, a pane attached to the left of the screen with the text "Hi! This is a pane"
              on the inside.
             </div>          
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page27",
 }
 </script>

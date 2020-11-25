@@ -54,11 +54,17 @@
             </p>
             </div>
            
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page33",
 }
 </script>

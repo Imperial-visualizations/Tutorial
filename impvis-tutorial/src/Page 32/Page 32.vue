@@ -25,11 +25,17 @@
                <img src="@/assets/images/canvas_box_display.png"  style="width:690px;height:auto;" align = "center"/></p>
             </div>
           
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page32",
 }
 </script>

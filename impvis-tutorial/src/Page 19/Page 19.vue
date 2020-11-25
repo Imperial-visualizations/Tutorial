@@ -36,12 +36,17 @@
                 When you click on the status, you will also see a checklist for each phase of the development process: these get ticked off upon completion of the relevant sections.
             </p>
             
-
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page19",
 
 }

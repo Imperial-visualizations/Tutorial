@@ -18,11 +18,17 @@
             <p>Additional dependencies can be installed using the same manner as described above for &lt;script&gt; templates.</p>
             </div>
             
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page26",
 }
 </script>

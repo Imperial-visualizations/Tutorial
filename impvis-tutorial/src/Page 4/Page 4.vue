@@ -12,11 +12,17 @@
                 <li><b>For the students:</b> Working as part of this project gives students an opportunity for professional development, it helps them become part of the academic community, and it allows them to get insight into modern teaching practices & educational design.</li>
             </ol>
             <!-- <img src="@/assets/images/triple_handshake.png"  style="width:400px;height:auto;"/> -->
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page4",
     
 }

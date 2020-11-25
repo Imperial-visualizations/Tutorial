@@ -10,12 +10,18 @@
             on the top right of the page.<br> 
             Please note, if you have any further questions, feel free to get in touch with Caroline Clewley at <a href="mailto:c.clewley@imperial.ac.uk">c.clewley@imperial.ac.uk</a>
             </div>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
-    name:"Welcome",
+    components: {
+        NavigationButton,
+    },
+    name:"Page1",
 }
 </script>
 <style>

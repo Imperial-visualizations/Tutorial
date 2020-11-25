@@ -23,11 +23,17 @@
             <li> Once all the functionality has been coded up, the visualisation is sent for <b>peer-review</b>, leading to further improvement and development before sending it for <b>staff review</b>.</li>
             <li>After checking ‘version 1.0’ for correctness, the staff partner <b>approves</b> the visualisation. It will then be <b>uploaded</b> to the website. Optional extensions can initiate a new design phase.</li>
             </ol>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page5",
 }
 </script>

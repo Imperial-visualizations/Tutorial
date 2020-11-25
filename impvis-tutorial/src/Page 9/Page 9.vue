@@ -17,11 +17,17 @@
             <b>GitKraken:</b> To download GitKraken, please visit <a href="https://www.gitkraken.com/download">https://www.gitkraken.com/download</a> and download it to a location you will remember.
                             
             </div>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page9",
 }
 </script>

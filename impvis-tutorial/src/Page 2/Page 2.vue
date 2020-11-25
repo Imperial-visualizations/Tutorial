@@ -19,13 +19,18 @@
                     <li><b>Summer team</b>: A group of students of engage with the project over the summer with the aim of innovation & development.</li>
                 </ul>
             </div>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
 
 export default {
-    name:"Page-2",
+    components: {
+        NavigationButton,
+    },
+    name:"Page2",
 
 }
 </script>

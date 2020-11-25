@@ -21,11 +21,17 @@
                 might find it surprising how many incorrect ideas make it this far, where it takes a lecturer to catch
                 out any inconsistencies!
             </p>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page49",
 }
 </script>

@@ -32,11 +32,17 @@
             </p>
             <h2>YouTube videos for the developer: </h2>
             <p>Check out the channel <a href=" https://www.youtube.com/channel/UCCWiTDeqBPSsUks0jFrhEKQ"> https://www.youtube.com/channel/UCCWiTDeqBPSsUks0jFrhEKQ</a></p>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page50",
 }
 </script>

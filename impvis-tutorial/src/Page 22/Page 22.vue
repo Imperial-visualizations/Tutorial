@@ -16,11 +16,17 @@
                 <img src="@/assets/images/Hello_world_display.png"  style="width:1024x;height:auto;"/></center>
                 To stop the Live Server, click on the ‘Port: 5500’ cancel button (at the bottom right).
             </div>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page22",
 }
 </script>

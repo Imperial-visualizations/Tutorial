@@ -18,11 +18,17 @@
            <p><b>GitKraken:</b> Click on File > Init Repo > GitHub.com and change the account to imperial-visualizations (you need to have the developer’s permission). You may fill in the desired name, description, and ‘where to clone to’ on your machine. Please note that the access must be public as ImpVis is an open-sourced website. Once you have clicked ‘Create Repository and Clone’, you may open the cloned repository and use it.</p>
 
             </div>
-                   </iv-visualisation>
+            <NavigationButton :pageName="this.$options.name" />
+        </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page14",
 }
 </script>

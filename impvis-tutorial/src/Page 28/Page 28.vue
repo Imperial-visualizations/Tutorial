@@ -21,11 +21,17 @@
              to use this feature effectively when designing the learning journey for the users of your visualisations.
             </div>
 
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page28",
 }
 </script>

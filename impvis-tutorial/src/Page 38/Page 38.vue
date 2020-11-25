@@ -84,11 +84,17 @@
                 to at least guess what's going on. Another example would be  100, where the approximation is almost perfect; the user might get 
                 confused upon seeing it.
             </p>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page38",
 }
 </script>

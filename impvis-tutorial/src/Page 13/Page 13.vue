@@ -22,11 +22,17 @@
              Now you may name it ‘dev’,
              and start to develop the code. Again, it is better to work on the dev branch than the master branch.
             </div>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page13",
 }
 </script>

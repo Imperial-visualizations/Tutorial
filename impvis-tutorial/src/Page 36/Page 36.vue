@@ -39,11 +39,17 @@
             <img src="@/assets/images/sliderblock_colours.png"  style="width:512px;height:auto;"/>
             </div>
             
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page36",
 }
 </script>

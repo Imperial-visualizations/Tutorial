@@ -23,11 +23,17 @@
             <p>Once you’ve opened the file you created earlier, enter <code>git clone https://github.com/Imperial-visualizations/Lattice-Vibrations.
                 git</code>. Now that you have a local repository! You can now look at the code of the visualization in an IDE of your choice (most of us use VSCode).</p>
         </div>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page11",
 }
 </script>

@@ -14,12 +14,17 @@ For more details on git, please check out <a href = "https://rogerdudler.github.
             
             </div>
           
-            
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page17",
 }
 </script>

@@ -27,11 +27,17 @@
             </p><img src="@/assets/images/colour_scheme.png"  style="width:1380px;height:auto;" align = "center"/>
             </div>
 
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page35",
 }
 </script>

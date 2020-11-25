@@ -19,11 +19,17 @@
              If you have created a folder for your HTML, you may want to open the VS Code folder. You can do it by dragging the folder into the Explorer:</p><img src="@/assets/images/vscode_folders.png"  style="width:159px;height512x;" align="left"/>
 
             </div>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page21",
 }
 </script>

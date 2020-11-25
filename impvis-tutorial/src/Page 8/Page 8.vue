@@ -21,11 +21,17 @@
             wish to learn more about GitHub, you can follow one of their suggested options. However, you can skip 
             if you only want to use GitHub for imperial visualisations for now.</p>
             </div>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page8",
 }
 </script>

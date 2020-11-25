@@ -13,11 +13,17 @@
                 <li>A partnership means <b>joint ownership</b> of both <b>the development process</b> and the <b>final visualisation</b>. Both staff and student(s) contribute to the decision-making of how to work on the visualisation, and both also make decisions on visualisation look and functionality.</li>
                 <li>The <b>responsibility</b> for the visualisation and its development is <b>shared, but not equal</b>. It is jointly up to the staff and student(s) involved in the partnership to define who is responsible for what precisely, in particular, during the design process. Generally, there is an expectation that the student is responsible for the coding process, and the staff member is responsible for the technical correctness of the final product.</li>
             </ol>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page3",
 }
 </script>

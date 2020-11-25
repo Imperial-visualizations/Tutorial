@@ -20,11 +20,17 @@
                 <li>Supported by a weekly bursary from Student Shapers.https://www.imperial.ac.uk/students/studentshapers/</li>
             </ol>
             </div>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page7",
 }
 </script>

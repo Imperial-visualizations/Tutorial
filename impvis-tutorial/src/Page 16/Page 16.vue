@@ -18,11 +18,17 @@
             <p><b>Command: </b></p>In the case that you have multiple people working on one repository, you will need to account for their changes too. This requires the use of the <b>pull merge commit push</b> system, whereby just before you push your changes, you first pull from the directory using <code>git pull</code>, then git will merge in any changes performed by the other person. Note, it sometimes can’t do this, and you will have to manually select what code to keep, either yours, the other persons, or both. With the issues in the merge resolved, you then <code>git add</code>, <code> git commit</code> and <code> git push</code> as described previously.
             <p><b>GitKraken: </b>Use the pull button and <i>‘fast-forward if possible’</i> option.</p></div>
             
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page16",
 }
 </script>

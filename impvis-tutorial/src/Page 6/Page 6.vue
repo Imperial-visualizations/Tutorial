@@ -15,11 +15,17 @@
             <p> These meetings are an excellent opportunity for staff and students to come in, have a chat, and have a go at developing your visualisation.</p> 
             <p>We hope that you will enjoy the process and that your final visualisations will prove to be of good use!</p>
             </div>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page6",
 }
 </script>

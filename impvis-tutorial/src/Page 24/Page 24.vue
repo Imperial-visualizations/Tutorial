@@ -23,11 +23,17 @@
             You can then use ES6 import statements to access the features of the library.</p>
             </div>
             
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page24",
 }
 </script>

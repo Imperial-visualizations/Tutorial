@@ -21,11 +21,17 @@
              Once you've made the clone, you can open the repository. Do this by clicking "Open now" when it is finished cloning, or later by clicking on "File">
               "Open Repo," and select the folder that you cloned the repository to.
             </div>
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page12",
 }
 </script>

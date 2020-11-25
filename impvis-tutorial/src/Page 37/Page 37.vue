@@ -11,11 +11,17 @@
             You can refer to “Notes_on_format_for_clarity_and_comprehension.pdf” in this repository for more details.
             </div>
     
+            <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
 <script>
+import NavigationButton from "../components/NavigationButton.vue";
+
 export default {
+    components: {
+        NavigationButton,
+    },
     name:"Page37",
 }
 </script>
