@@ -28,7 +28,7 @@ body{
     background-color:#2772C2;
     color:#ffffff;
     font-weight: 600;
-    font-size:25pt;
+    font-size:20pt;
     text-align:center;
 }
 #app ul{
