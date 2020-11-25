@@ -43,6 +43,7 @@ export default {
     width: 4.8rem;
     margin-right: 1.5rem;
     margin-bottom: 2rem;
+    margin-top: 1rem;
     background: #133f6f;
 }
 .nav-button:hover {
