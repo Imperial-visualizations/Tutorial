@@ -255,5 +255,9 @@ module.exports = {
                 title:'Extra Comments',
                 
             },
+            page_51:{
+                entry:'src/Page 51/main.js',
+                title:'ImpVis Components Docs',
+            }
     }
 }

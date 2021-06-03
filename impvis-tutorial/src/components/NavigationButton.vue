@@ -38,7 +38,7 @@ export default {
             return this.pageNumber - 1 >= 1
         },
         shouldRenderNext: function() {
-            return this.pageNumber + 1 <= 50
+            return this.pageNumber + 1 <= 51
         }
     },
 };
