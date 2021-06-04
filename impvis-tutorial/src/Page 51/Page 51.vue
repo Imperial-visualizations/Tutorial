@@ -6,64 +6,119 @@
             <h1>ImpVis Components Documentation Library</h1>
             </center>
 
-            <div style="margin-left:10vw; background-color:grey; width:20vw;">
-                <center><h2><u>Contents</u></h2></center>
-                <h4>
-                    <a href="#layoutComponents">Layout Components</a>
-                </h4>
-                <ul>
-                    <a href="#pane">Pane</a>
-                </ul>
-                <ul>
-                    <a href="#sidebarContent">Sidebar Content</a>
-                </ul>  
-                <ul>
-                    <a href="#sidebarSection">Sidebar Section</a>
-                </ul>
-                <ul>
-                    <a href="#fixedHotspot">FixedHotspot</a>
-                </ul>
-                <ul>
-                    <a href="#toggleHotspot">ToggleHotspot</a>
-                </ul>
-                <h4>
-                    <a href="#buttonsAndInputs">Buttons and Inputs</a>
-                </h4>    
-                <ul>
-                    <a href="#button">Button</a>
-                </ul>  
-                <ul>
-                    <a href="#toggleAdvance">Toggle Advance</a>
-                </ul>  
-                <ul>
-                    <a href="#toggleBasic">Toggle Basic</a>
-                </ul>
-                <ul>
-                    <a href="#dropdownList">Dropdown List</a>
-                </ul>
-                <ul>
-                    <a href="#dropdownTextbox">Dropdown Textbox</a>
-                </ul>
-                <ul>
-                    <a href="#symbolButton">Symbol Button</a>
-                </ul>
-                <ul>
-                    <a href="#slider">Slider</a>
-                </ul>
-                <ul>
-                    <a href="#sliderBlock">Slider Block</a>
-                </ul>
-                <ul>
-                    <a href="#tickbox">Tickbox</a>
-                </ul>
-                <ul>
-                    <a href="#tabs">Tabs</a>
-                </ul>
+            <center>
+            <div id="toc_container" >
+                <center><h2 id="toc_title"><u>Contents</u></h2></center>
+                <div id="left-column" style="display: inline-block; text-align:left;">
+                    <h4 id="toc_cat">
+                        <a  href="#layoutComponents">Layout Components</a>
+                    </h4>
+                    <ul>
+                        <a href="#pane">Pane</a>
+                    </ul>
+                    <ul>
+                        <a href="#sidebarContent">Sidebar Content</a>
+                    </ul>  
+                    <ul>
+                        <a href="#sidebarSection">Sidebar Section</a>
+                    </ul>
+                    <ul>
+                        <a href="#fixedHotspot">FixedHotspot</a>
+                    </ul>
+                    <ul>
+                        <a href="#toggleHotspot">ToggleHotspot</a>
+                    </ul>
+
+
+                    <h4 id="toc_cat">
+                        <a href="#buttonsAndInputs">Buttons and Inputs</a>
+                    </h4>  
+
+                    <ul>
+                        <a href="#button">Button</a>
+                    </ul>  
+                    <ul>
+                        <a href="#toggleAdvance">Toggle Advance</a>
+                    </ul>  
+                    <ul>
+                        <a href="#toggleBasic">Toggle Basic</a>
+                    </ul>
+                    <ul>
+                        <a href="#dropdownList">Dropdown List</a>
+                    </ul>
+                    <ul>
+                        <a href="#dropdownTextbox">Dropdown Textbox</a>
+                    </ul>
+                    <ul>
+                        <a href="#symbolButton">Symbol Button</a>
+                    </ul>
+                    <ul>
+                        <a href="#slider">Slider</a>
+                    </ul>
+                    <ul>
+                        <a href="#sliderBlock">Slider Block</a>
+                    </ul>
+                    <ul>
+                        <a href="#tickbox">Tickbox</a>
+                    </ul>
+                    <ul>
+                        <a href="#tabs">Tabs</a>
+                    </ul>
+                </div>
+
+                <div id="right-column" style="display:inline-block; float:right; margin-left:10vw; margin-right: 10vw; text-align:left;">
+                    <h4 id="toc_cat">
+                        <a href="#visualBits">Visual Bits</a>
+                    </h4>  
+                    <ul>
+                        <a href="#HoverText">Hover Text</a>
+                    </ul>
+                    <ul>
+                        <a href="#loadingBar">Loading Bar</a>
+                    </ul>
+                    <ul>
+                        <a href="#loadingSpinner">Loading Spinner</a>
+                    </ul>
+                    <ul>
+                        <a href="#meter">Meter</a>
+                    </ul>
+                    <ul>
+                        <a href="#navigation">Navigation</a>
+                    </ul>
+                    <ul>
+                        <a href="sidebarText">Sidebar Text</a>
+                    </ul>
+                    <ul>
+                        <a href="#Titles">Titles</a>
+                    </ul>
+
+
+                    <h4 id="toc_cat">
+                        <a href="#Other">Other</a>
+                    </h4> 
+                    <ul>
+                        <a href="#dragAndDrop">Drag and Drop</a>
+                    </ul>
+                    <ul>
+                        <a href="#svgDragAndDrop">SVG Drag and Drop</a>
+                    </ul>
+                    <ul>
+                        <a href="#legacyWrapper">Legacy Wrapper</a>
+                    </ul>
+                    <ul>
+                        <a href="#equationBox">Equation Box</a>
+                    </ul>
+                </div>
+
             </div>
+            </center>
             
-            <div style="margin-left:5vw; width:95vw; word-wrap: break-word;">
-                <h2 id="layoutComponents">Layout Components</h2>
-                <h4 id="pane">Pane</h4>
+            <div style="margin-left:5vw; width:90vw; word-wrap: break-word;">
+                <hr id="layoutComponents">
+                <h2>Layout Components</h2>
+
+                <hr id="pane">
+                <h4>Pane</h4>
                 Creates a container on the side of the page which can house content, usually text.
                 <br>
                 <img src="./assets/Pane.png">
@@ -84,8 +139,9 @@
                 Default: 0 <br>
                 Description: Determines how transparent the pane is. <br><br>
 
+                <hr id="sidebarContent">
 
-                <h4 id="sidebarContent">Sidebar Content</h4>
+                <h4>Sidebar Content</h4>
                 Place inside pane component. Wraps text.
                 <br>
                 <img src="./assets/SidebarContent.png">
@@ -95,8 +151,8 @@
                 Default: "true" <br>
                 Description: Shows "next" and "previous" buttons for multi-page visualisations.<br><br>
 
-
-                <h4 id="sidebarSection">Sidebar Section</h4>
+                <hr id="sidebarSection">
+                <h4>Sidebar Section</h4>
                 Place inside "sidebar Content" component. Creates a title with an icon for a section of text and adds the section to navigation.
                 <br>
                 <img src="./assets/SidebarSection.png">
@@ -121,8 +177,8 @@
                 Type: String <br>
                 Description: The title of the section <br><br>
 
-
-                <h4 id="fixedHotspot">Fixed Hotspot</h4>
+                <hr id="fixedHotspot">
+                <h4>Fixed Hotspot</h4>
                 Container for HTML within a certain section of the screen.
                 <br>
                 <img src="./assets/FixedHotspot.png">
@@ -149,8 +205,8 @@
                 Type: Bool <br>
                 Default: "false" <br><br>
 
-
-                <h4 id="toggleHotspot">Toggle Hotspot</h4>
+                <hr id="toggleHotspot">
+                <h4>Toggle Hotspot</h4>
                 Container for HTML within a certain section of the screen, which may be hidden or displayed with a tab.
                 <br>
                 <img src="./assets/ToggleHotspot1.png">
@@ -182,12 +238,36 @@
                 Type: Bool <br>
                 Default: "false" <br><br>
 
+                <hr id="buttonsAndInputs">
 
-                <h2 id="buttonsAndInputs">Buttons and Inputs</h2>
+                <h2>Buttons and Inputs</h2>
 
-                <h4 id="button">Button</h4>
+                <hr id="button">
 
-                <h4 id="toggleAdvance">Toggle Advance</h4>
+                <h4>Button </h4>
+                    <mark>iv-button</mark>: A button component for general use.
+                    <br>
+                    <img src="./assets/button.png" alt="Button Component">
+
+                    <h5>Props</h5>
+                    Name: disabled <br>
+                    Type: Bool <br>
+                    Default: "false" <br>
+                    Description: Greys out the button and prevents it from emitting events. <br><br>
+
+                    <h5>Events</h5>
+                    Name: mouseover <br>
+                    Description: Emits this when mouse cursor enters the region of the button component. <br><br>
+
+                    Name: mouseleave <br>
+                    Description: Emits this when mouse cursor leaves the region of the button component. <br><br>
+
+                    Name: click <br>
+                    Description: Emits this when the mouse button is pressed and the cursor is over the button. <br><br>
+
+                <hr id="toggleAdvance">
+
+                <h4>Toggle Advance</h4>
                     A button that allows users to switch between multiple modes. It is possible to disable the toggle by setting the prop "toggleDisabled" to "true".
                     <br>
                     <img src="./assets/ToggleAdvanceMode1.png" alt="Toggle Advance in mode 1">
@@ -210,7 +290,9 @@
                     Default: false <br>
                     Description: Disable the input <br><br>
 
-                <h4 id="toggleBasic">Toggle Basic</h4>
+                <hr id="toggleBasic">
+
+                <h4>Toggle Basic</h4>
                     A button that allows users to switch between two modes. It is possible to disable the toggle by setting the prop "toggleDisabled" to "true".
                     <br>
                     <img src="./assets/ToggleBasicTrueMode.png" alt="Toggle Basic in true mode">
@@ -227,7 +309,9 @@
                     Default:        false <br>
                     Description:    Disable the input <br><br>
 
-                <h4 id="dropdownList">Dropdown List</h4>
+                <hr id="dropdownList">
+
+                <h4>Dropdown List</h4>
                     A button that allows users to select a mode from a display/hide list of modes. It is possible to disable the dropdown by setting the prop "dropdownDisabled" to "true".
                     <br>
                     <img src="./assets/DropdownListMode1.png" alt="Dropdown list in mode 1">
@@ -250,7 +334,9 @@
                     Default: false <br>
                     Description: Disable the dropdown button <br><br>
 
-                <h4 id="dropdownTextbox">Dropdown Textbox</h4>
+                <hr id="dropdownTextbox">
+
+                <h4>Dropdown Textbox</h4>
                     A button that allows users to display/hide a text box. It is possible to disable the dropdown by setting the prop "dropdownDisabled" to "true".
                     <br>
                     <img src="./assets/DropdownTextBoxShortText.png" alt="Dropdown textbox with sample text">
@@ -270,7 +356,9 @@
                     Default: false <br>
                     Description: Disable the dropdown button <br><br>
 
-                <h4 id="symbolButton">Symbol Button</h4>
+                <hr id="symbolButton">
+
+                <h4>Symbol Button</h4>
                     A button with changeable symbol for various purposes. Examples are play button, pause button and stop button.
                     <br>
                     <img src="./assets/SymbolButtonPlay.png" alt="Symbol button with 'play' shape">
@@ -287,8 +375,10 @@
                     Name: symbol <br>
                     Type: String <br>
                     Description: Controls the shape of the symbol. Choices are "play", "pause", "stop", "reset" and "help". <br><br>
+                
+                <hr id="slider">
 
-                <h4 id="slider">Slider</h4>
+                <h4>Slider</h4>
                     A ranged slider that allows user to control variable.
                     <br>
                     <img src="./assets/Slider.png" alt="Blue slider">
@@ -363,7 +453,9 @@
                     Default: 0 <br>
                     Description: Sets the number of decimal places for the numTick <br><br>
 
-                <h4 id="sliderBlock">Slider Block</h4>
+                <hr id="sliderBlock">
+
+                <h4>Slider Block</h4>
                     The iv-slider-block is a wrapper for the iv-slider component. 
                     It takes the props of iv-slider and creates a stackable block which contains the slider.
                     An example is shown below.
@@ -431,7 +523,9 @@
                     Default: true<br>
                     Description: Display the help button<br><br>
 
-                <h4 id="tickbox">Tickbox</h4>
+                <hr id="tickbox">
+
+                <h4>Tickbox</h4>
                     A boolean checkbox component that can be disabled by setting the prop "toggleDisabled" to "true".
                     <br>
                     <img src="./assets/bluetick.png" alt="A blue tick">
@@ -447,7 +541,9 @@
                     Default:        false <br>
                     Description:    Disable the checkbox <br><br>
 
-                <h4 id="tabs">Tabs</h4>
+                <hr id="tabs">
+
+                <h4>Tabs</h4>
                     The iv-tabs component is the wrapper component of the iv-tab component. 
                     It takes in multiple tabs and wraps them into a list. 
                     The transition effect when switching between tabs wrapped by this component was imported from iv-toggle-advanced.
@@ -482,6 +578,10 @@ export default {
     margin:10px 50px;
 }
 
+iv-visualisation{
+    width:100vw;
+}
+
  ul {
   list-style-type: none;
  }
@@ -498,9 +598,6 @@ export default {
     color: red; 
 } 
 
-div{
-    max-width: 95%;
-}
 
 img {
     padding: 0;
@@ -508,6 +605,43 @@ img {
     margin: 0 auto;
     max-height: 90%;
     max-width: 85%;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 15vh;
+    margin-top: 10vh;
+}
+
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+.toc_cat {
+    font-size: 13pt;
+    line-height: 0.1em;
+    border: 0px;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+    font-size: 10pt;
+    line-height: 0.4em;
+}
+
+mark {
+    background-color:lightgray;
 }
 
 </style>
