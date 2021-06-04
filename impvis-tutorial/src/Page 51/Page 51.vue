@@ -26,18 +26,6 @@
                 <ul>
                     <a href="#toggleHotspot">ToggleHotspot</a>
                 </ul>
-                <ul>
-                    <a href="#titleBar">TitleBar</a>
-                </ul>
-                <ul>
-                    <a href="#guidance">Guidance</a>
-                </ul>
-                <ul>
-                    <a href="#sidebarSection">Sidebar Section</a>
-                </ul>
-                <ul>
-                    <a href="#sidebarContent">Sidebar Content</a>
-                </ul>   
                 <h4>
                     <a href="#buttonsAndInputs">Buttons and Inputs</a>
                 </h4>    
@@ -73,7 +61,7 @@
                 </ul>
             </div>
             
-            <div style="margin-left: 5vw;">
+            <div style="margin-left:5vw; width:95vw; word-wrap: break-word;">
                 <h2 id="layoutComponents">Layout Components</h2>
                 <h4 id="pane">Pane</h4>
                 Creates a container on the side of the page which can house content, usually text.
@@ -105,7 +93,7 @@
                 Name: showPagination <br>
                 Type: Bool <br>
                 Default: "true" <br>
-                Description: <br><br>
+                Description: Shows "next" and "previous" buttons for multi-page visualisations.<br><br>
 
 
                 <h4 id="sidebarSection">Sidebar Section</h4>
@@ -194,9 +182,6 @@
                 Type: Bool <br>
                 Default: "false" <br><br>
 
-
-
-                <h4 id="pane">Pane</h4>
 
                 <h2 id="buttonsAndInputs">Buttons and Inputs</h2>
 
@@ -513,6 +498,17 @@ export default {
     color: red; 
 } 
 
+div{
+    max-width: 95%;
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 90%;
+    max-width: 85%;
+}
 
 </style>
 
