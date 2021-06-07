@@ -258,6 +258,10 @@ module.exports = {
             page_51:{
                 entry:'src/Page 51/main.js',
                 title:'ImpVis Components Docs',
+            },
+            page_52:{
+                entry:'src/Page 52/main.js',
+                title:'Uploading Vis to Website ',
             }
     }
 }

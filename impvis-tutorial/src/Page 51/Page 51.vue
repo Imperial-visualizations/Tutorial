@@ -83,13 +83,7 @@
                         <a href="#meter">Meter</a>
                     </ul>
                     <ul>
-                        <a href="#navigation">Navigation</a>
-                    </ul>
-                    <ul>
-                        <a href="sidebarText">Sidebar Text</a>
-                    </ul>
-                    <ul>
-                        <a href="#Titles">Titles</a>
+                        <a href="#sectionTitle">Section Title</a>
                     </ul>
 
 
@@ -557,9 +551,80 @@
 
             </div>
             
+            <hr id="visualBits">
+
+            <h2>Visual Bits</h2>
+
             
-           
-            <NavigationButton :pageName="this.$options.name" />
+            <hr id="meter">
+            
+            <h4> Meter </h4>
+                A progress bar.
+                <br>
+                <img src="./assets/Meter.png" alt="The meter component at approximately half progress.">
+                <br>
+                <h5> Props </h5>
+                Name: value <br>
+                Type: Number <br>
+                Default: None <br>
+                Description: The percentage completeness of the progress bar. <br><br>
+
+                Name: min <br>
+                Type: Number <br>
+                Default: None <br>
+                Description: The minimum value at which the bar shows any progress. <br><br>
+
+                Name: max <br>
+                Type: Number <br>
+                Default: None <br>
+                Description: The maximum value at which the bar stops progressing. <br><br>
+
+            <hr id="sectionTitle">
+
+            <h4> Section Title </h4>
+                A premade title for the start of a section of text.
+                <img src="./assets/sectionTitle.png">
+                <br>
+                <h5> Props </h5>
+                Name: bold <br>
+                Type: Boolean <br>
+                Default: "false" <br>
+                Description: Determines if bold text is used for the title or not. <br><br>
+
+                Name: align <br>
+                Type: String <br>
+                Default: "center" <br>
+                Possible Values: "left", "center", "right" <br>
+                Description: Determines the alignment of the title on the page. <br><br>
+
+            
+            
+            <hr id="other">
+
+            <h2> Other </h2>
+
+            <hr id="legacyWrapper">
+            <h4>Legacy Wrapper</h4>
+                
+            <hr id="equationBox">
+
+            <h4>Equation Box</h4>
+            The equation box component allows mathematical expressions to be displayed. The equations are input as Katex which has a similar format to Latex.
+            <img src="./assets/EquationBox.png" alt="The equation box component displaying an example equation">
+            <br>
+            <h5> Props </h5>
+            Name: equation <br>
+            Type: String <br>
+            Default:  "f({x}) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi" <br>
+            Description: This is where you input the katex code for the equation you wish to be displayed. <br><br>
+
+            Name: stylise <br>
+            Type: Boolean <br>
+            Default: "true" <br>
+            Description: Determines if equation is displayed with a blue border and background, or with no border or background. <br><br>
+
+
+        <NavigationButton :pageName="this.$options.name" />
         </iv-visualisation>
     </div>
 </template>
