@@ -555,6 +555,71 @@
                     <img src="./assets/TabsUsage.png" alt="Example of tabs implementation">
                     Make sure that the iv-tab component is wrapped by the iv-tabs component.
 
+                <hr id="visualBits">
+
+                <h2>Visual bits</h2>
+
+                <hr id="HoverText">
+
+                <h4>Hover Text</h4>
+                    The iv-hover-text is a container that displays an additional container upon mouseover.
+                    The second container follows the cursor when the cursor is moving within the first container. (See below)
+                    Both containers are slots for versatility.
+                    <img src="./assets/HoverText.png" alt="Cursor over Hover Text element, showing the hidden message">
+                    <br>
+                    <h5> Props </h5>
+                    Name: hoverElement<br>
+                    Type: String<br>
+                    Default: "Hover over me"<br>
+                    Description: A demonstration of the slot container for main display<br><br>
+
+                    Name: defaultText<br>
+                    Type: String<br>
+                    Default: "This is a secret message."<br>
+                    Description: A demonstration of the slot container for pop-up display<br><br>
+
+                <hr id="loadingBar">
+
+                <h4>Loading Bar</h4>
+                    The iv-loading-bar is a non-reactive that takes in a number and display the number through its percentage width.
+                    <br>
+                    <img src="./assets/LoadingBar1.png" alt="Loading bar at zero progress">
+                    <img src="./assets/LoadingBar2.png" alt="Loading bar at half progress">
+                    <img src="./assets/LoadingBar3.png" alt="Loading bar at full progress">
+                    <h5> Props </h5>
+                    Name: loadingProgress<br>
+                    Type: Number<br>
+                    Default: 0<br>
+                    Description: The number that is taken in and turned into percentage width of the blue progress bar<br><br>
+
+                <hr id="loadingSpinner">
+
+                <h4>Loading Spinner</h4>
+                    The iv-loading-spinner is a non-reactive that takes in a number for adjusting the size of the spinning loading icon.
+                    <br>
+                    <img src="./assets/LoadingSpinner.png" alt="Loading spinner rotating">
+                    <h5> Props </h5>
+                    Name: spinnerScaling<br>
+                    Type: Number<br>
+                    Default: 1<br>
+                    Description: The number that adjusts the size of the spinner<br><br>
+
+                <hr id="Other">
+
+                <h2>Other</h2>
+
+                <hr id="svgDragAndDrop">
+
+                <h4>SVG Drag and Drop</h4>   
+                    Support Vector Graphics (SVG) Drag and Drop is made of iv-svg-draggable wrapped by iv-svg-container.
+                    The iv-svg-draggable is a tag that enables cursor drag-and-drop functionality for the SVG element for which this tag wraps.
+                    The iv-svg-container is a blank SVG holder with a slot. <br><br>
+                    Here is an example of interactive graphics, which can be found in the ImpVis library under the Examples folder.
+                    This example can be launched from the terminal by running "npm run examples:svgdragdrop" in a local copy of the ImpVis library.
+                    <img src="./assets/SVGDragAndDropExample.png" alt="SVG Drag and Drop Example Screenshot">
+                    <img src="./assets/DragAndDropExampleCode1.png" alt="Screenshot 1 of drag and drop example">
+                    <img src="./assets/DragAndDropExampleCode2.png" alt="Screenshot 2 of drag and drop example">
+                    <img src="./assets/DragAndDropExampleCode3.png" alt="Screenshot 3 of drag and drop example">
             </div>
             
             
